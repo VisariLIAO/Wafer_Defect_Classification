@@ -23,6 +23,16 @@ This is a multi-label classification task, as one wafer map can exhibit multiple
 
 # Model Architecture
 
-Convolutional Neural Network (CNN) with multiple convolutional and pooling layers.
+The core model is a Convolutional Neural Network (CNN) composed of multiple convolutional and pooling layers designed to effectively extract spatial features from the wafer maps. The network concludes with a fully connected (dense) layer containing 8 neurons with sigmoid activation functions, each outputting the probability of a specific defect type, suitable for the multi-label classification task.
 
-Final dense layer outputs 8 sigmoid-activated values representing defect probabilities.
+To optimize performance, various CNN architectures such as VGGNet, ResNet, and DenseNet were explored to identify the most suitable model for this dataset. Additionally, several techniques were applied to enhance model generalization and reduce overfitting, including:
+
+Data augmentation: Random transformations such as rotations, flips, and shifts were applied to the training data to artificially increase dataset diversity and improve robustness.
+
+Regularization methods: Techniques such as dropout and L2 weight decay were incorporated to prevent the model from overfitting to the training data.
+
+Early stopping: Training was monitored on a validation set, and stopped when performance ceased to improve to avoid overfitting and reduce unnecessary computation.
+
+Hyperparameter tuning: Parameters like learning rate, batch size, and network depth were systematically adjusted to find the optimal training setup.
+
+Through this comprehensive approach, the model aims to accurately classify multiple defect types on wafer maps while maintaining strong generalization on unseen data.
