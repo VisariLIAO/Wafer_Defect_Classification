@@ -36,3 +36,20 @@ Early stopping: Training was monitored on a validation set, and stopped when per
 Hyperparameter tuning: Parameters like learning rate, batch size, and network depth were systematically adjusted to find the optimal training setup.
 
 Through this comprehensive approach, the model aims to accurately classify multiple defect types on wafer maps while maintaining strong generalization on unseen data.
+
+
+## Training Details
+
+## Evaluation Metrics
+
+This project addresses a multi-label classification problem where each wafer map may contain multiple defect types. Therefore, a single accuracy metric is insufficient to fully evaluate model performance. We use the following evaluation metrics:
+
+- **Precision**: The ratio of correctly predicted positive observations to the total predicted positives. Indicates the reliability of positive predictions and helps reduce false positives.
+
+- **Recall**: The ratio of correctly predicted positive observations to all actual positives. Reflects the model’s ability to detect positive instances, reducing false negatives.
+
+- **F1-score**: The harmonic mean of Precision and Recall, providing a balance between the two, commonly used in multi-label classification.
+
+- **Sub-accuracy**: The average accuracy calculated per label, measuring the model’s stable performance across each defect type.
+
+All metrics are computed per defect category and averaged (macro or micro averaging) to fairly assess the multi-label classification results.
