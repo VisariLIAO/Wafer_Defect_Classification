@@ -29,6 +29,22 @@ This is a multi-label classification task, as one wafer map can exhibit multiple
 - **Output layer**: 8 neurons with sigmoid activation function.  
 - **Loss function**: Binary cross-entropy (`binary_crossentropy`).
 
+
+
+---
+
+### 💡 Motivation & Problem Statement 
+Wafer defect detection is a critical step in semiconductor manufacturing to ensure product quality and reduce costs. Traditional inspection methods are often time-consuming and subject to human error. This project aims to develop an automated, accurate, and robust multi-label classification system to efficiently identify various defect types on wafer maps, helping manufacturers improve yield and minimize defective products.
+
+晶圓缺陷檢測是半導體製造中確保產品品質與降低成本的重要環節。傳統檢測方法耗時且易受人為誤差影響。本專案旨在開發自動化且準確的多標籤分類系統，有效識別晶圓圖中的多種缺陷，協助提升良率並減少缺陷品。
+
+---
+
+### 🎯 Why Prioritize High Precision 
+In wafer defect detection, **high precision** means predicted defects are very likely true defects, significantly reducing false positives. Excessive false positives lead to unnecessary rework and waste of resources. Therefore, prioritizing precision minimizes unnecessary inspections and interventions, improves production efficiency, and maintains product quality.
+
+
+
 # Model Architecture
 
 
