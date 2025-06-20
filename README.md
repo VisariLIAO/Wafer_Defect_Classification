@@ -2,6 +2,31 @@
 
 This project presents a wafer map defect classification system based on deep learning.It combines Convolutional Neural Networks (CNN) and Multi-Layer Perceptrons (MLP), and iteratively improves model performance from model1 to model11.
 
+
+
+# Project Structure
+
+VisariLIAO/
+
+├── best_model/              # Trained model files
+
+├── confusion_matrix/        # Confusion matrix related files or charts
+
+├── dataset/                 # Raw or processed datasets
+
+├── model_example/           # Example models or demo scripts
+
+├── .gitignore               # Git ignore configuration file
+
+├── Challenges & Solutions.md # Project challenges and solutions description
+
+├── README.md                # Project documentation
+
+└── requirements.txt         # Project dependency package list
+
+
+
+
 # Dataset
 
 We use the Mixed-type Wafer Defect Dataset (MixedWM38), which contains 38,015 wafer maps of size 52×52 pixels. The dataset includes:
