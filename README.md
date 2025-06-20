@@ -36,7 +36,6 @@ This is a multi-label classification task, as one wafer map can exhibit multiple
 ### 💡 Motivation & Problem Statement 
 Wafer defect detection is a critical step in semiconductor manufacturing to ensure product quality and reduce costs. Traditional inspection methods are often time-consuming and subject to human error. This project aims to develop an automated, accurate, and robust multi-label classification system to efficiently identify various defect types on wafer maps, helping manufacturers improve yield and minimize defective products.
 
-晶圓缺陷檢測是半導體製造中確保產品品質與降低成本的重要環節。傳統檢測方法耗時且易受人為誤差影響。本專案旨在開發自動化且準確的多標籤分類系統，有效識別晶圓圖中的多種缺陷，協助提升良率並減少缺陷品。
 
 ---
 
@@ -144,31 +143,40 @@ All metrics are computed per defect category and averaged (macro or micro averag
 
 ## Visualizations
 
-The following visualizations are generated using **model11**, showcasing the model’s ability to detect different types of wafer defects. Each image corresponds to one of the eight defect categories:
+The following confusion matrices show the classification results of **model11** for the eight wafer defect categories.
 
-1. Center  
+1. Center
+   
    ![Confusion Matrix](confusion_matrix/Center.png)
 
-2. Donut  
+2. Donut
+   
    ![Confusion Matrix](confusion_matrix/Donut.png)
 
-3. Edge-Loc  
+3. Edge-Loc
+    
    ![Confusion Matrix](confusion_matrix/Edge-Loc.png)
 
-4. Edge-Ring  
+4. Edge-Ring
+   
    ![Confusion Matrix](confusion_matrix/Edge-Ring.png)
 
-5. Loc  
+5. Loc
+    
    ![Confusion Matrix](confusion_matrix/Loc.png)
 
-6. Near-full  
+6. Near-full
+    
    ![Confusion Matrix](confusion_matrix/Near-full.png)
 
-7. Random  
+7. Random
+    
    ![Confusion Matrix](confusion_matrix/Random.png)
-
+  
 8. Scratch
+    
    ![Confusion Matrix](confusion_matrix/Scratch.png)
+
 
 *Note: The images illustrate the predicted defect regions and demonstrate the model's accuracy and robustness in multi-label classification.*
 
@@ -176,8 +184,11 @@ The following visualizations are generated using **model11**, showcasing the mod
 Following these, five examples of actual wafer maps predicted by model11 will be presented to showcase its real-world performance.
 
 
-
-
+  ![example1](model_example/sample_0.png) 
+  ![example2](model_example/sample_5.png)
+  ![example3](model_example/sample_10.png)
+  ![example4](model_example/sample_20.png)
+  ![example5](model_example/sample_25.png)
 
 
 
