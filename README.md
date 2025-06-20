@@ -1,6 +1,6 @@
 # Project Overview
 
-This project focuses on classifying wafer defect patterns using convolutional neural networks (CNN). Accurate detection and classification of wafer defects are crucial for semiconductor manufacturing quality control.
+This project presents a wafer map defect classification system based on deep learning.It combines Convolutional Neural Networks (CNN) and Multi-Layer Perceptrons (MLP), and iteratively improves model performance from model1 to model11.
 
 # Dataset
 
@@ -12,6 +12,14 @@ We use the Mixed-type Wafer Defect Dataset (MixedWM38), which contains 38,015 wa
   - 2 = broken die (failed electrical test)  
 
 - arr_1: One-hot encoded labels representing 8 basic defect types (single defects).
+  1.Center
+  2.Donut
+  3.Edge-Loc
+  4.Edge-Ring
+  5.Loc
+  6.Near-full
+  7.Random
+  8.Scratch
 
 This is a multi-label classification task, as one wafer map can exhibit multiple defect types simultaneously.
 
