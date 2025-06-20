@@ -31,22 +31,69 @@ This is a multi-label classification task, as one wafer map can exhibit multiple
 
 # Model Architecture
 
-The core model is a Convolutional Neural Network (CNN) composed of multiple convolutional and pooling layers designed to effectively extract spatial features from the wafer maps. The network concludes with a fully connected (dense) layer containing 8 neurons with sigmoid activation functions, each outputting the probability of a specific defect type, suitable for the multi-label classification task.
 
-To optimize performance, various CNN architectures such as VGGNet, ResNet, and DenseNet were explored to identify the most suitable model for this dataset. Additionally, several techniques were applied to enhance model generalization and reduce overfitting, including:
+Hybrid Neural Network Model Architecture and Key Techniques
+This project presents an innovative CNN and MLP dual-branch architecture, designed to effectively capture both spatial features and raw data patterns. It integrates various advanced techniques to enhance model performance and robustness.
 
-Data augmentation: Random transformations such as rotations, flips, and shifts were applied to the training data to artificially increase dataset diversity and improve robustness.
+🏗️ Model Architecture Overview
+The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
 
-Regularization methods: Techniques such as dropout and L2 weight decay were incorporated to prevent the model from overfitting to the training data.
+The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
 
-Early stopping: Training was monitored on a validation set, and stopped when performance ceased to improve to avoid overfitting and reduce unnecessary computation.
+### 1. CNN Branch
 
-Hyperparameter tuning: Parameters like learning rate, batch size, and network depth were systematically adjusted to find the optimal training setup.
+Dedicated to capturing spatial features and local patterns within the data.
 
-Through this comprehensive approach, the model aims to accurately classify multiple defect types on wafer maps while maintaining strong generalization on unseen data.
+- **Structure:** Comprises 3 convolutional blocks with increasing filters:  
+  - Block 1: 64 filters  
+  - Block 2: 128 filters  
+  - Block 3: 256 filters  
+- **Inside each block:**  
+  - BatchNormalization: Accelerates training and improves stability  
+  - LeakyReLU Activation: Introduces non-linearity and prevents the "dying neuron" problem of ReLU  
+  - MaxPooling2D: Downsamples and extracts dominant features  
+- **Final Layer:** Dense layer with L2 regularization and Dropout to reduce overfitting
+
+### 2. MLP Branch
+
+Processes raw input data directly to learn low-dimensional or non-spatial patterns.
+
+- **Structure:**  
+  - Flatten input data  
+  - Dense(512) fully connected layer  
+  - Dense(256) fully connected layer  
+- **Activation Function:** LeakyReLU for all dense layers
+
+### 3. Fusion Layer
+
+Integrates features extracted from both CNN and MLP branches for final decision making.
+
+- **Operation:** Concatenate feature vectors from CNN and MLP branches  
+- **Subsequent layers:**  
+  - Dense(256) + Dropout  
+  - Dense(8) output layer with Sigmoid activation for multi-label classification
+
+---
+
+## ⚙️ Key Techniques Used
+This project employs a range of essential techniques during model development and training to optimize performance, generalization capability, and training efficiency:
 
 
-## Training Details
+| Category               | Techniques                                           | Purpose                                                                                          |
+|------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| 📈 Feature Extraction | CNN layers with increasing filter sizes              | Effectively capture hierarchical spatial features from input data                                |
+| ➕ Dual Path Learning | CNN + MLP branches                                   | Combine spatial features and raw data patterns for comprehensive feature representation          |
+| 🧪 Data Augmentation  | Rotation, shift, zoom, horizontal flip               | Increase data diversity, reduce dependency on specific data arrangements, improve generalization |
+| 🧹 Regularization     | L2 weight decay and Dropout layers                   | Strongly mitigate overfitting, improve performance on unseen data                                |
+| 🧠 Activation         | LeakyReLU activation function                        | Prevent dying neurons, ensure gradient flow, and enhance training stability                      |
+| 🛑 Early Stopping     | Stop training when validation loss plateaus          | Prevent overfitting and save training time                                                       |
+| 🧪 Validation Strategy| 15% validation split (train_test_split)              | Evaluate model on unseen data during training, monitor overfitting                               |
+| 🎯 Loss Function      | Binary Cross-Entropy                                 | Suitable for multi-label classification, quantifies prediction error                             |
+| 🧮 Optimizer          | Adam with ReduceLROnPlateau scheduler                | Automatically reduces learning rate when validation metrics plateau, improves convergence        |
+| 📏 Thresholding       | Prediction threshold set at 0.9                      | Adjusts strictness in class labeling for multi-label output                                      |
+| 📊 Evaluation Metrics | Macro Precision, Recall, F1-score, Subset Accuracy   | Comprehensive evaluation of multi-label classification performance                               |
+
+
 
 ## Evaluation Metrics
 
@@ -61,3 +108,17 @@ This project addresses a multi-label classification problem where each wafer map
 - **Sub-accuracy**: The average accuracy calculated per label, measuring the model’s stable performance across each defect type.
 
 All metrics are computed per defect category and averaged (macro or micro averaging) to fairly assess the multi-label classification results.
+
+
+## Final Model Performance
+
+## 📈 Final Model Performance 最佳模型表現（model11）
+
+| Metric index       |   Score    |
+|--------------------|------------|
+| Macro Precision    | **0.9970** |
+| Macro Recall       | **0.9646** |
+| Macro F1-score     | **0.9792** |
+| Subset Accuracy    | **0.9721** |
+
+
