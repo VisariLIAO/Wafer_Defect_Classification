@@ -142,9 +142,23 @@ All metrics are computed per defect category and averaged (macro or micro averag
 
 
 
+## Visualizations
+
+The following visualizations are generated using **model11**, showcasing the model’s ability to detect different types of wafer defects. Each image corresponds to one of the eight defect categories:
+
+1. Center  
+2. Donut  
+3. Edge-Loc  
+4. Edge-Ring  
+5. Loc  
+6. Near-full  
+7. Random  
+8. Scratch
+
+*Note: The images illustrate the predicted defect regions and demonstrate the model's accuracy and robustness in multi-label classification.*
 
 
-
+Following these, five examples of actual wafer maps predicted by model11 will be presented to showcase its real-world performance.
 
 
 
