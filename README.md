@@ -141,16 +141,15 @@ This project addresses a multi-label classification problem where each wafer map
 
 - **Sub-accuracy**: The average accuracy calculated per label, measuring the model’s stable performance across each defect type.
 
-All metrics are computed per defect category and averaged (macro or micro averaging) to fairly assess the multi-label classification results.
 
 
 ## 📈 Final Model Performance （model11）
 
 | Metric index       |   Score    |
 |--------------------|------------|
-| Macro Precision    | **0.9970** |
-| Macro Recall       | **0.9646** |
-| Macro F1-score     | **0.9792** |
+| Precision          | **0.9970** |
+| Recall             | **0.9646** |
+| F1-score           | **0.9792** |
 | Subset Accuracy    | **0.9721** |
 
 
