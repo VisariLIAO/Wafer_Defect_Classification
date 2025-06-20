@@ -135,8 +135,7 @@ All metrics are computed per defect category and averaged (macro or micro averag
 | Subset Accuracy    | **0.9721** |
 
 
-
-
+![loss](model_example/loss_epochs.png)
 
 
 
@@ -198,6 +197,7 @@ Following these, five examples of actual wafer maps predicted by model11 will be
    *Chih-Hsiung Wang, Yu-Chen Chen, 2020*
  2. [A hybrid MLP‑CNN classifier for very fine resolution remotely sensed image classification](https://doi.org/10.1016/j.isprsjprs.2017.07.014)  
   Ce Zhang *et al.*, 2018. 混合 CNN 與 MLP 分支，並以信心驅動融合策略達到最佳分類效果。
+
  3.- [Development of a Wafer Defect Pattern Classifier Using Ensemble of Binary CNNs](https://www.mdpi.com/2079-9292/13/7/1360)  
   
 ###  Dataset
