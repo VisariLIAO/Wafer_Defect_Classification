@@ -147,13 +147,28 @@ All metrics are computed per defect category and averaged (macro or micro averag
 The following visualizations are generated using **model11**, showcasing the model’s ability to detect different types of wafer defects. Each image corresponds to one of the eight defect categories:
 
 1. Center  
+   ![Confusion Matrix](confusion_matrix/Center.png)
+
 2. Donut  
+   ![Confusion Matrix](confusion_matrix/Donut.png)
+
 3. Edge-Loc  
+   ![Confusion Matrix](confusion_matrix/Edge-Loc.png)
+
 4. Edge-Ring  
+   ![Confusion Matrix](confusion_matrix/Edge-Ring.png)
+
 5. Loc  
+   ![Confusion Matrix](confusion_matrix/Loc.png)
+
 6. Near-full  
+   ![Confusion Matrix](confusion_matrix/Near-full.png)
+
 7. Random  
+   ![Confusion Matrix](confusion_matrix/Random.png)
+
 8. Scratch
+   ![Confusion Matrix](confusion_matrix/Scratch.png)
 
 *Note: The images illustrate the predicted defect regions and demonstrate the model's accuracy and robustness in multi-label classification.*
 
