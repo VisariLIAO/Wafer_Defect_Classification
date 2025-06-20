@@ -192,7 +192,20 @@ Following these, five examples of actual wafer maps predicted by model11 will be
 
 
 
+## References
 
+ 1. [Defect Pattern Recognition on Wafers Using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/9073738)  
+   *Chih-Hsiung Wang, Yu-Chen Chen, 2020*
+ 2. [A hybrid MLP‑CNN classifier for very fine resolution remotely sensed image classification](https://doi.org/10.1016/j.isprsjprs.2017.07.014)  
+  Ce Zhang *et al.*, 2018. 混合 CNN 與 MLP 分支，並以信心驅動融合策略達到最佳分類效果。
+ 3.- [Development of a Wafer Defect Pattern Classifier Using Ensemble of Binary CNNs](https://www.mdpi.com/2079-9292/13/7/1360)  
+  
+###  Dataset
+
+We used the [Mixed-type Wafer Defect Dataset (MixedWM38)](https://www.kaggle.com/datasets/shawon10/wafer-map-dataset-mixedwm38) from Kaggle.  
+It contains 38,015 labeled wafer maps (size 52×52), with one-hot encoded labels for 8 single-type defects.
+
+> Dataset by [Shawon10](https://www.kaggle.com/shawon10), available under CC BY-NC-SA 4.0 License.
 
 
 ## ✨ Author
