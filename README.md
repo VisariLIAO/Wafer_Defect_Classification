@@ -110,9 +110,7 @@ This project addresses a multi-label classification problem where each wafer map
 All metrics are computed per defect category and averaged (macro or micro averaging) to fairly assess the multi-label classification results.
 
 
-## Final Model Performance
-
-## 📈 Final Model Performance 最佳模型表現（model11）
+## 📈 Final Model Performance （model11）
 
 | Metric index       |   Score    |
 |--------------------|------------|
@@ -122,3 +120,29 @@ All metrics are computed per defect category and averaged (macro or micro averag
 | Subset Accuracy    | **0.9721** |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ✨ Author
+
+* **Visari Liao (Liao,Yun-chen)：** 
+* M.S. in Statistics, National Chung Hsing University
+* B.S. in Mathematics, National Chung Cheng University
+* **Professional Fields**: Data Scientist, AI/Machine Learning, Deep Learning, Algorithm Development
+* **Interests**: Deep learning, data science, and AI applications for semiconductor manufacturing.
