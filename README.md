@@ -6,23 +6,8 @@ This project presents a wafer map defect classification system based on deep lea
 
 # Project Structure
 
-VisariLIAO/
 
-├── best_model/              # Trained model files
-
-├── confusion_matrix/        # Confusion matrix related files or charts
-
-├── dataset/                 # Raw or processed datasets
-
-├── model_example/           # Example models or demo scripts
-
-├── .gitignore               # Git ignore configuration file
-
-├── Challenges & Solutions.md # Project challenges and solutions description
-
-├── README.md                # Project documentation
-
-└── requirements.txt         # Project dependency package list
+  ![Structure](Structure.png)
 
 
 
@@ -48,6 +33,8 @@ We use the Mixed-type Wafer Defect Dataset (MixedWM38), which contains 38,015 wa
 
 This is a multi-label classification task, as one wafer map can exhibit multiple defect types simultaneously.
 
+
+
 # Problem Definition
 
 - **Task**: Multi-label classification of wafer defects.  
@@ -55,17 +42,23 @@ This is a multi-label classification task, as one wafer map can exhibit multiple
 - **Loss function**: Binary cross-entropy (`binary_crossentropy`).
 
 
-
 ---
+
+
 
 ### 💡 Motivation & Problem Statement 
 Wafer defect detection is a critical step in semiconductor manufacturing to ensure product quality and reduce costs. Traditional inspection methods are often time-consuming and subject to human error. This project aims to develop an automated, accurate, and robust multi-label classification system to efficiently identify various defect types on wafer maps, helping manufacturers improve yield and minimize defective products.
 
 
+
 ---
+
+
 
 ### 🎯 Why Prioritize High Precision 
 In wafer defect detection, **high precision** means predicted defects are very likely true defects, significantly reducing false positives. Excessive false positives lead to unnecessary rework and waste of resources. Therefore, prioritizing precision minimizes unnecessary inspections and interventions, improves production efficiency, and maintains product quality.
+
+
 
 
 
@@ -79,6 +72,7 @@ This project presents an innovative CNN and MLP dual-branch architecture, design
 The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
 
 The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
+
 
 ### 1. CNN Branch
 
@@ -205,7 +199,7 @@ The following confusion matrices show the classification results of **model11** 
 *Note: The images illustrate the predicted defect regions and demonstrate the model's accuracy and robustness in multi-label classification.*
 
 
-Following these, five examples of actual wafer maps predicted by model11 will be presented to showcase its real-world performance.
+**Following these, five examples of actual wafer maps predicted by model11 will be presented to showcase its real-world performance.**
 
 
   ![example1](model_example/sample_0.png) 
@@ -240,3 +234,5 @@ It contains 38,015 labeled wafer maps (size 52×52), with one-hot encoded labels
 * B.S. in Mathematics, National Chung Cheng University
 * **Professional Fields**: Data Scientist, AI/Machine Learning, Deep Learning, Algorithm Development
 * **Interests**: Deep learning, data science, and AI applications for semiconductor manufacturing.
+* **Email**: a0916554513@gmail.com  
+
