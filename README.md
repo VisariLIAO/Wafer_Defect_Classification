@@ -55,7 +55,7 @@ Wafer defect detection is a critical step in semiconductor manufacturing to ensu
 
 
 
-### 🎯 Why Prioritize High Precision 
+###  Why Prioritize High Precision 
 In wafer defect detection, **high precision** means predicted defects are very likely true defects, significantly reducing false positives. Excessive false positives lead to unnecessary rework and waste of resources. Therefore, prioritizing precision minimizes unnecessary inspections and interventions, improves production efficiency, and maintains product quality.
 
 
@@ -68,7 +68,7 @@ In wafer defect detection, **high precision** means predicted defects are very l
 Hybrid Neural Network Model Architecture and Key Techniques
 This project presents an innovative CNN and MLP dual-branch architecture, designed to effectively capture both spatial features and raw data patterns. It integrates various advanced techniques to enhance model performance and robustness.
 
-🏗️ Model Architecture Overview
+ Model Architecture Overview
 The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
 
 The model consists of two independent branches: a Convolutional Neural Network (CNN) branch and a Multi-Layer Perceptron (MLP) branch, with their outputs integrated through a fusion layer.
@@ -143,7 +143,7 @@ This project addresses a multi-label classification problem where each wafer map
 
 
 
-## 📈 Final Model Performance （model11）
+##  Final Model Performance （model11）
 
 | Metric index       |   Score    |
 |--------------------|------------|
