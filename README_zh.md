@@ -164,7 +164,6 @@
 
 本專案使用來自 Kaggle 的 [Mixed-type Wafer Defect Dataset (MixedWM38)](https://www.kaggle.com/datasets/shawon10/wafer-map-dataset-mixedwm38)，共收錄 38,015 張 52×52 尺寸晶圓圖及其 8 種缺陷類別的 one-hot 標籤。
 
-> 資料集由 [Shawon10](https://www.kaggle.com/shawon10) 提供，採用 CC BY-NC-SA 4.0 授權。
 
 ---
 
