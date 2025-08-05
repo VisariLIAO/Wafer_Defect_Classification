@@ -223,7 +223,6 @@ The following confusion matrices show the classification results of **model11** 
 We used the [Mixed-type Wafer Defect Dataset (MixedWM38)](https://www.kaggle.com/datasets/shawon10/wafer-map-dataset-mixedwm38) from Kaggle.  
 It contains 38,015 labeled wafer maps (size 52×52), with one-hot encoded labels for 8 single-type defects.
 
-> Dataset by [Shawon10](https://www.kaggle.com/shawon10), available under CC BY-NC-SA 4.0 License.
 
 
 ## ✨ Author
